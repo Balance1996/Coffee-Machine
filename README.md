@@ -42,6 +42,20 @@ main()
 
 Controls the main program loop and handles user input. It directs the program to the appropriate functions based on the user's selection, including ordering drinks, displaying a report, refilling resources, and shutting down the machine.
 
+Guard Clauses
+
+Guard clauses check for invalid conditions before the program proceeds with its normal operations.
+
+Benefits:
+
+Prevent invalid operations: An invalid drink should not proceed to the ingredient-deduction stage.
+
+Protect program state: Resources should remain unchanged when a purchase fails because of invalid input, insufficient ingredients, or insufficient payment.
+
+Improve readability: Handling failure conditions early reduces unnecessary nesting and keeps the normal execution path easier to follow.
+
+Example from the Coffee Machine: If no refills remain, the program displays a message and uses continue to return to the next loop iteration without refilling the machine.
+
 Key Concepts Practised
 
 Working with dictionaries and lists of dictionaries.
