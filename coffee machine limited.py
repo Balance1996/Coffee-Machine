@@ -164,10 +164,10 @@ def main():
         time.sleep(1)
 
         try:
-            penny_input = int("".join(input("How many pennies? ")).strip())
-            nickel_input = int("".join(input("How many nickels? ")).strip())
-            dime_input = int("".join(input("How many dimes? ")).strip())
-            quarter_input = int("".join(input("How many quarters? ")).strip())
+            penny_input = int("".join(input("How many pennies? ")).strip().replace(" ",""))
+            nickel_input = int("".join(input("How many nickels? ")).strip().replace(" ",""))
+            dime_input = int("".join(input("How many dimes? ")).strip().replace(" ",""))
+            quarter_input = int("".join(input("How many quarters? ")).strip().replace(" ",""))
 
             if min(
                 penny_input,
